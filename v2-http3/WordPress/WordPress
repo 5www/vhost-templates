@@ -1,4 +1,4 @@
-#{"rootDirectory":"","phpVersion":"8.0","varnishCacheSettings":{"cacheLifetime":"604800","controller":"wordpress","excludes":["^\/my-account\/","\/cart\/","\/checkout\/","wp-login.php"],"excludedParams":["__SID","noCache"]}}
+#{"rootDirectory":"s1001","phpVersion":"8.3","siteUser":"s1001","siteUserPassword":"eR2*vMYtLs@8rF3Ud+JjX9!q0","varnishCacheSettings":{"cacheLifetime":"18000","controller":"wordpress","excludes":["^\/my-account\/","\/cart\/","\/checkout\/","wp-login.php"],"excludedParams":["__SID","noCache"]}"phpSettings":{"maxInputVars":"5000","memoryLimit":"256M","additionalConfiguration":["date.timezone=Europe/Bucharest;","display_errors=off;"]}}
 server {
   listen 80;
   listen [::]:80;
@@ -7,7 +7,7 @@ server {
   listen [::]:443 quic;
   listen [::]:443 ssl;
   http2 on;
-  http3 off;
+  http3 on;
   {{ssl_certificate_key}}
   {{ssl_certificate}}
   {{server_name}}
