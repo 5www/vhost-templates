@@ -1,4 +1,4 @@
-#{"rootDirectory":"s1001","phpVersion":"8.3","siteUser":"s1001","varnishCacheSettings":{"cacheLifetime":"18000","controller":"wordpress","excludes":["^\/my-account\/","\/cart\/","\/checkout\/","wp-login.php"],"excludedParams":["__SID","noCache"]}}
+#{"rootDirectory":"","phpVersion":"8.3","varnishCacheSettings":{"cacheLifetime":"18000","controller":"wordpress","excludes":["^\/my-account\/","\/cart\/","\/checkout\/","wp-login.php"],"excludedParams":["__SID","noCache"]}}
 server {
   listen 80;
   listen [::]:80;
